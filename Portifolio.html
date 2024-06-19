@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bindu Sri Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        #hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #555 url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: #ccc;
+        }
+
+        .section {
+            padding: 80px 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .about {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .about img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+            flex: 1;
+        }
+
+        .services-grid, .projects-grid, .experience-grid {
+            display: grid;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .service-item, .project-item, .experience-item {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover, .project-item:hover, .experience-item:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .contact a {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Bindu Sri Potnuru</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Bindu Sri Potnuru</h1>
+            <p>Web Development and Design Intern, based in India.</p>
+            <p><a href="#about" class="hero-btn">My Story</a></p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container about">
+            <img src="https://via.placeholder.com/150" alt="Bindu Sri Potnuru">
+            <p>I am a dedicated Computer Science student with a keen interest in IoT. My goal is to leverage internship opportunities to develop hands-on skills and contribute to forward-thinking organizations. I thrive in collaborative environments, possess strong communication skills, and am committed to continuous learning and growth.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container services">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Product Designer</h3>
+                    <p>Creating visually appealing and user-friendly product designs.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Branding Designer</h3>
+                    <p>Building strong and memorable brand identities.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Full Stack Developer</h3>
+                    <p>Developing robust and scalable web applications, both frontend and backend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>Automated Plant Irrigation System</h3>
+                    <p>Developed an automated plant irrigation system using soil moisture sensors connected to an Arduino Uno Board, ensuring optimal water usage.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Obstacle Detection Vehicle</h3>
+                    <p>Engineered a vehicle model with obstacle detection capabilities using Ultrasonic and IR sensors for improved navigation and safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container experience">
+            <h2>Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Intern, Phoenix Global</h3>
+                    <p>Collaborated on data analytics projects at Afors Consulting, gaining valuable industry experience.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Core Member, CYSEC</h3>
+                    <p>Actively participated in CYSEC Club, contributing to various cybersecurity initiatives and events.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Classical Dancer</h3>
+                    <p>Passionate about classical dance, performing at various cultural events and competitions.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Intern, Prodigy Infotech</h3>
+                    <p>Worked as a Data Science Intern, applying machine learning techniques to real-world problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: <a href="mailto:bindusripotnuru@gmail.com" style="color: #333;">bindusripotnuru@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/bindusripotnuru/" style="color: #333;">LinkedIn Profile</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bindu Sri Potnuru. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
